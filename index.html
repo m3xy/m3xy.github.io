@@ -1,1 +1,149 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="shortcut icon" type="ico" href="favicon.ico"/>
+        <title>Marcus Yip</title>
+    </head>
+    <body>
+
+        <header>
+            <img id = "logo" src = "Yo.gif" width = "150" height = "150" onclick = location.reload()>
+                <div class = "marquee">
+                    <div class = "marquee-content scroll muted">
+                        info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info
+                    </div>
+                    <div class = "marquee-content scroll muted">
+                        info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info info
+                    </div>
+                </div>
+            <div class = "dropdown">
+                <h1 class = "dropdown-text unselected" onclick="toggle(0)"><img id = "sky" src = "Clouds.gif" width = "75" height = "75"></h1>
+                <div class = "dropdown-content hidden">
+                    <h3>Marcus Yiu Yeung Yip <a href="Marcus Yip CV.pdf" target="_blank" rel="noopener noreferrer" class = "link">📃</a></h3>
+                    <!-- <p class = "muted">葉(Yiu) 耀(Yeung) 揚(Yip)</p> -->
+                    <p class = "muted">よう(Y&#333) よう(Y&#333) よう(Y&#333)</p>
+                    <!-- <p class = "muted">葉耀揚 = よう(Yo) よう(Yo) よう(Yo)</p> -->
+                    <p><a href="Graduation.mp4" target="_blank" rel="noopener noreferrer" class = "link">🎓 MSCi Computer Science</a> • <a href="https://www.linkedin.com/in/yyyo" target="_blank" rel="noopener noreferrer" class = "link">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Based in Edinburgh</a> • <a href="https://github.com/m3xy" target="_blank" rel="noopener noreferrer" class = "link">💻 Software Developer</a></p>
+                    <br>
+                    <div>
+                        <video id="soon" width="50%" height="50%" controls>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p id = "sky2">
+                </div>
+            </div>
+        </header>
+
+        <div class = "marquee">
+            <div class = "marquee-content scroll muted reverse">
+                link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link
+            </div>
+            <div class = "marquee-content scroll muted reverse">
+                link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link link
+            </div>
+        </div>
+        <br>
+        <div class="scroller">
+            <div class = "column">
+                <div class = "dropdown">
+                    <h2 class = "dropdown-text unselected" onclick="toggle(1)"><img id = "tree" src = "Tree.gif" width = "75" height = "75"></h2>
+                    <div class = "dropdown-content hidden">
+                        <h3>WIP</h3>
+                        <p id="komorebi"><a href="https://ko.more.bi" target="_blank" rel="noopener noreferrer" class = "link"> komorebi </a></p>
+                        <p class = "muted">こ(ko) も(mo) れ(re) び(bi)</p>
+                        <p>🌳</p>
+                        <br>
+                        <!-- <div id = "back">
+                            <button onclick = "back()">&lt; Back</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div class = "dropdown">
+                    <h2 class = "dropdown-text unselected" onclick="toggle(2)"><img id = "clouds" src = "Clouds2.gif" width = "75" height = "75"></h2>
+                    <div class = "dropdown-content hidden">
+                        <h3>WIP</h3>
+                        <p id="morebi"><a href="https://more.bi" target="_blank" rel="noopener noreferrer" class = "link"> morebi </a></p>
+                        <p class = "muted">も(mo) れ(re) び(bi)</p>
+                        <p id = "clouds2">☁️</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div class = "dropdown">
+                    <h2 class = "dropdown-text unselected" onclick="toggle(3)"><img id = "leaf" src = "Leaf.gif" width = "75" height = "75"></h2>
+                    <div class = "dropdown-content hidden">
+                        <h3>WIP</h3>
+                        <p id="hamorebi"><a href="https://ha.more.bi" target="_blank" rel="noopener noreferrer" class = "link"> hamorebi </a></p>
+                        <p class = "muted">は(ha) も(mo) れ(re) び(bi)</p>
+                        <p>🍃</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div class = "dropdown">
+                    <h2 class = "dropdown-text unselected" onclick="toggle(4)"><img id = "grass" src = "Grass.gif" width = "75" height = "75"></h2>
+                    <div class = "dropdown-content hidden">
+                        <h3>WIP</h3>
+                        <p id="marcusorg"><a href="https://marc.us.org" target="_blank" rel="noopener noreferrer" class = "link"> marcus </a></p>
+                        <p class = "muted">Yiu Yeung Yip</p>
+                        <p>🌿</p>
+                        <br>
+                        <!-- <div id = "back">
+                            <button onclick = "back()">&lt; Back</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <br> -->
+        <div class = "marquee">
+            <div class = "marquee-content scroll muted">
+                work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work
+            </div>
+            <div class = "marquee-content scroll muted">
+                work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work work
+            </div>
+        </div>
+
+        <div class = "dropdown">
+            <h2 class = "dropdown-text unselected" onclick="toggle(5)"><img id = "grass" src = "Soil.gif" width = "75" height = "75"></h2>
+            <div class = "dropdown-content hidden">
+                <h3>Feed</h3>
+                <!-- oninput may be preferred for smaller directories as search times are shorter -->
+                <!-- onchange may be preferred for larger directories as search times may be longer-->
+                <input id = "search" type = "search" placeholder = "Search" autocomplete = "off" oninput = "search()">
+                <br><br>
+                <input type = "checkbox" id = "showDates" class = "checkbox" onclick = "filter(0)">
+                <label for = "showDate">Date</label>
+                <input type = "checkbox" id = "showPosts" class = "checkbox" onclick = "filter(1)">
+                <label for = "showName">Post</label>
+                <br><img id = "loading" src = "Globe.gif" width = "50" height = "50"><br>
+                <table id="files">
+                    <thead>
+                        <tr>
+                            <th id = "dates" class = "link" onclick = "sort(0)">Date</th>
+                            <th id = "posts" class = "link" onclick = "sort(1)">Post</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <p>🌱</p>
+            </div>
+        </div>
+
+        <p class = "muted">Click <mark>. . .</mark> to show elements!</p>
+        <p class = "muted">(Page generated on: <label id="time" class = "muted"></label>)</p>
+
+        <script src="scripts.js"></script>
+    </body>
+</html> 

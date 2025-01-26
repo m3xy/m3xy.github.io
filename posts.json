@@ -1,0 +1,27 @@
+[
+    {
+        "date" : 1727286654127,
+        "post" : "<h4 class = \"link\">Particle Artillery release!</h4>",
+        "text" : "<p><img src=\"ParticleArtillery.PNG\" alt=\"Particle Artillery\" width=\"640px\" height=\"360\"></p><p><a href=\"https://github.com/m3xy/Particle-Artillery\" target=\"_blank\" rel=\"noopener noreferrer\" class = \"link\">Particle Artillery</a> is a 2D/3D, multiplayer, turn-based tactical artillery game written in Processing. Features Procedural Content Generation, Physics and AI.</p>"
+    },
+    {
+        "date" : 1727286655836,
+        "post" : "<h4 class = \"link\">Roguelike release!</h4>",
+        "text" : "<p><img src=\"Roguelike.PNG\" alt=\"Roguelike\" width=\"640px\" height=\"360\"></p><p><a href=\"https://github.com/m3xy/Roguelike\" target=\"_blank\" rel=\"noopener noreferrer\" class = \"link\">Roguelike</a> is a 3D roguelike built in Processing. Features procedurally generated dungeons and simple A* pathfinding for AI enemies.</p>"
+    },
+    {
+        "date" : 1727286657194,
+        "post" : "<h4 class = \"link\">EFIR release!</h4>",
+        "text" : "<p><iframe src=\"https://drive.google.com/file/d/1C6cfRSwakYCSvkEl5SvDxPlnpS3L2sLv/preview\" width=\"640\" height=\"360\" allow=\"autoplay\"></iframe></p><p>“<a href=\"https://github.com/m3xy/EFIR\" target=\"_blank\" rel=\"noopener noreferrer\" class = \"link\">EFIR</a>” (pronounced as “ever”) is a Survival based, First Person Shooter (FPS) game.</p>"
+    },
+    {
+        "date" : 1727286658239,
+        "post" : "<h4 class = \"link\">Flo release! (Master's dissertation)</h4>",
+        "text" : "<p><iframe src=\"https://drive.google.com/file/d/1Uknf-RZN9j2nJzmNVk1nsRexWICFJvWU/preview\" width=\"640\" height=\"360\" allow=\"autoplay\"></iframe></p><p><a href=\"https://github.com/m3xy/Flo\" target=\"_blank\" rel=\"noopener noreferrer\" class = \"link\">Flo</a> is a three-dimensional, rhythmic, first person, rail shooter that reacts to music in real-time. <a href=\"Master's Dissertation.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class = \"link\">Master's dissertation</a></p>"
+    },
+    {
+        "date" : 1727286660289,
+        "post" : "<h4 class = \"link\">Hello world!</h4>",
+        "text" : "<p>Currently working on an unannounced FPS using C++, WASM, and WebGPU</p>"
+    }
+]

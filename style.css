@@ -1,0 +1,214 @@
+* { /*Apply to all*/
+  font-family: Courier;
+  background-color:#222;
+  color:#f3e5ab;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* p {
+  font-size: 16px;
+} */
+
+/* img {
+  border: 1px solid #f3e5ab;
+} */
+
+h1 { /*Apply to h1 elements*/
+  text-align:center;
+  color:#f3e5ab;
+  background-color:#2A3439;
+  border-left: 9px solid #111;
+  opacity: 0.8;
+  transition: opacity 0.2s ease; /*If the background changes opacity, does so in 0.9s, easing into it*/
+}
+
+.dropdown:hover h1 { /*Hovering over dropdown containing h1 changes the opacity of the background color of the h1 element*/
+  opacity:1;
+}
+
+h2 { /*Apply to h2 elements*/
+  text-align:center;
+  color:#f3e5ab;
+  background-color: #464D4D;
+  border-left: 9px solid #111;
+  opacity: 0.25;
+  transition: opacity 0.9s ease; /*If the background changes opacity, does so in 0.9s, easing into it*/
+}
+
+.dropdown:hover h2 { /*Hovering over dropdown containing h2 changes the opacity of the background color of the h2 element*/
+  opacity:1;
+}
+
+.unselected::before { /*For dropdowns that are not displaying*/
+  content:"▸";
+}
+
+.unselected::after {   /*For dropdowns that are not displaying*/
+    content:"◂";
+}
+
+.selected, .selected::before, .selected::after { /*For dropdowns that are displaying*/
+  opacity: 1;
+  content:"▿";
+}
+
+.scroller {
+  transform: rotateX(180deg);
+  background-color: #222;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #fff;
+}
+
+.scroller > .column {
+  transform: rotateX(180deg);
+  display: inline-block;
+}
+
+.scroller .column ~ .column {
+  margin-left: -9px;
+}
+
+mark { /*Used to mark (mini) h2 elements in text */
+  background-color:#464D4D;
+  color:#f3e5ab;
+  border-left: 4px solid #111;
+  opacity : 0.25;
+  transition: opacity 0.9s ease;
+}
+
+mark:hover { /*Used to imitate h2 elements effect in mark elements */
+  opacity : 1;
+}
+
+input, button { /*Everything that the user can edit/click onto is styled here*/
+  border-width: 0;
+  border-bottom: 2px solid #111;
+  background-color: #222;
+  color: #FFF;
+  transition: border-bottom 0.9s ease; /*If the bottom border changes (colour), does so in 0.9s, easing into it*/
+}
+
+#back { /*Positioning the back button to the left side of the div it is contained within*/
+  text-align:left;
+}
+
+button:hover { /*Hovering over the back button displays a solid red underline*/
+  border-bottom: 2px solid #FF2400;
+}
+
+/*disallow the autofill on browsers changing the background colour of inputs*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-text-fill-color: #FFF;
+    -webkit-box-shadow: 0 0 0 30px #222 inset !important;
+}
+
+.dropdown { /*Styling for elements (divs) containing elements with dropdown content*/
+
+  /*Allows the dropdown to be placed correctly in the page when perhaps other dropdown-content is showing*/
+  text-align: center;
+  position: relative; 
+  display: inline-block;
+  width: 100%; 
+}
+
+.dropdown-content { /*Styling for content that is displayed from clicking dropdown elements*/
+  position: absolute;
+  background-color: #222;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1; /*Makes sure that dropdown content lies on top of page elements*/
+
+  /*Prior to being dropped down by clicking on the dropdown element, visibility is hidden and opacity is 0*/
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.9s ease; /*Changing the elements visibility will be instant and it's opacity will take 0.9s*/
+}
+
+.column { /*Used to contain an element within half of a page*/
+  width: 33.3%;
+  /* vertical-align: top; */
+  vertical-align: bottom
+}
+
+table, th, td { /*Applies to the table displaying the directory contents*/
+    position:relative;
+    width:100%;
+    border: 2px solid #111;
+    table-layout: fixed;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+th { /*Applies only to the table headings displaying the directory contents*/
+    background-color: #232B2B;
+}
+
+#dates {
+    width: 33.3%;
+}
+
+.link:hover { /*Hovering over links changes the colour of the text to blue, the cursor to a pointer and underlines the text*/
+    color: #00E;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.show { /*Used to denote whenever a dropdown is showing its content*/
+  position: relative;
+  visibility: visible;
+  opacity: 100;
+}
+
+.hidden {
+  display: none;
+}
+
+h3 {
+  text-align:center;
+  color:#fff;
+}
+
+.muted {
+  color:#464D4D;
+}
+
+/* marquee */
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: 1rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+.scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.reverse {
+  animation-direction: reverse;
+}
